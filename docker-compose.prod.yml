@@ -2,6 +2,10 @@ version: '2'
 services:
 
   redmine:
+    env_file:
+      - /etc/docker/common.env
+      - /etc/docker/redmine.env
+    restart: unless-stopped
     logging:
       driver: syslog
       options:
