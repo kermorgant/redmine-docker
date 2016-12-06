@@ -5,9 +5,9 @@ services:
     env_file:
       - /etc/docker/common.env
       - /etc/docker/redmine.env
-    restart: unless-stopped
-    logging:
-      driver: syslog
-      options:
-        syslog-address: udp://localhost:514
-        tag: redmine
+#    restart: unless-stopped:3
+#    logging:
+#      driver: syslog
+#      options:
+#        syslog-address: udp://localhost:514
+#        tag: redmine
