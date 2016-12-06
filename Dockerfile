@@ -12,3 +12,4 @@ RUN chmod +x /entrypoint.sh /usr/local/bin/wait-for-it.sh
 
 
 ENTRYPOINT ["/entrypoint.sh"]
+CMD ["rails", "server", "-b", "0.0.0.0"]
